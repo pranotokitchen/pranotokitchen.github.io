@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Pranoto Kitchen Set</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<style>.venom-button{position:fixed;bottom:15px;left:15px;font-size:17px;transition:bottom .2s}.venom-button .venom-button-button{position:relative;border-radius:50%;box-shadow:1px 1px 4px rgba(60,60,60,.4);transition:box-shadow .2s;cursor:pointer;overflow:hidden}.venom-button .venom-button-button img,.venom-button .venom-button-button svg{position:absolute;width:100%;height:auto;object-fit:cover;top:50%;left:50%;transform:translate3d(-50%,-50%,0);border-radius:50%}.venom-button:hover{bottom:17px}.venom-button:hover .venom-button-button{box-shadow:1px 2px 8px rgba(60,60,60,.4)}.venom-button .venom-button-popup{border-radius:6px;background-color:#e5ddd5;position:absolute;overflow:hidden;padding:0;box-shadow:1px 2px 8px rgba(60,60,60,.25);width:0;height:0;bottom:0;opacity:0;transition:bottom .1s ease-out,opacity .2s ease-out;transform-origin:bottom}.venom-button .venom-button-popup.active{padding:0 12px 12px 12px;width:260px;height:auto;bottom:82px;opacity:1}.venom-button .venom-button-popup .venom-button-message{background-color:#fff;padding:8px;border-radius:0 5px 5px 5px;box-shadow:1px 1px 1px rgba(0,0,0,.15);opacity:0;transition:opacity .2s}.venom-button .venom-button-popup.active .venom-button-message{opacity:1;transition-delay:.2s}.venom-button .venom-button-popup .venom-button-head{text-align:right;color:#fff;margin:0 -15px 10px -15px;padding:6px 12px;display:flex;justify-content:space-between;cursor:pointer}.venom-button .venom-button-input-message{background-color:#fff;margin:10px -15px -15px -15px;padding:0 15px;display:flex;align-items:center}.venom-button .venom-button-input-message textarea{border:1px solid #ccc;border-radius:4px;box-shadow:none;padding:8px;margin:10px 0;width:100%;max-width:100%;font-family:inherit;font-size:inherit;resize:none}.venom-button .venom-button-btn-send{margin-left:12px;font-size:0;cursor:pointer}</style>
+    <script type="text/javascript" src="assets/js/venom-button.min.js"></script>
+<style>
+a {
+    color: #f0f0f0;text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+	scroll-behavior: smooth;
+	background-color: #f0f0f0;
+	font-family: Open Sans;
+	font-size: 18px;
+    color: #291d19;
+    text-decoration:none;margin:0;
+}
+header {
+    padding: 130px;
+}
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #292929;
+    color: #f0f0f0;
+}
+.navig1 {
+    background-color: #292929;
+    color: #f0f0f0;
+}
+.navig {
+    background-color: #f0f0f0;
+    color: #291d19;
+}
+</style>
+<!-- Navbar -->
+<script type="text/JavaScript">
+//courtesy of BoogieJack.com
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top w3-card-4">
+  <div class="w3-bar w3-black navbar">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Menu lainnya"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><b>Pranoto Kitchen Set</b></a>
+    <a href="#kontak" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Kontak</a>
+    <a href="#profil" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Tentang Kami</a>
+    <a href="#galeri" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Galeri</a>
+    <div class="w3-dropdown-hover w3-hide-small w3-right">
+      <button class="w3-padding-large w3-button" title="Silahkan pilih menu di bawah ini">Produk  <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#harga" class="w3-bar-item w3-button">Kitchen Set</a>
+        <a href="#harga" class="w3-bar-item w3-button">Lemari</a>
+        <a href="#harga" class="w3-bar-item w3-button">Wardrobe / Rak TV</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-card-4" style="margin-top:46px">
+  <a href="#profil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tentang Kami</a>
+  <a href="#galeri" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Galeri</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Produk</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Bahan Dasar</a>
+</div>
+
+<!-- ukuran lebar halaman bro -->
+<div style="max-width:1500px;margin-top:49px">
+  
+	<button onclick="topFunction()" id="myBtn" title="Keatas"><i class="fa fa-plane"></i></button>
+	<div id="myButton"></div>
+  <!-- Header with image -->
+<!-- Automatic Slideshow Images -->
+<div id="slider">
+		<figure>
+			<img src="assets/img/1.png">
+			<img src="assets/img/2.png">
+			<img src="assets/img/3.png">
+          <img src="assets/img/2.png">
+          <img src="assets/img/3.png">
+		</figure>
+	</div>
+</header>
+<section>
+  <!-- The App Section -->
+<div id="profil">
+  <!-- Second Grid -->
+<div class="container w3-content w3-row-padding w3-padding-32 w3-content">
+    <div class="w3-third w3-center">
+      <i class="w3-padding-32">
+        <img src="assets/img/pekerja.png" class="w3-image w3-padding w3-hide-small" width="500" height="500">
+      </i>
+    </div>
+
+    <span class="w3-xlarge w3-margin-bottom"><b>Pranoto Kitchen Set</b></span><br>
+      <p>Merupakan penyedia jasa pembuatan kitchen set dan furniture set lainnya Berdiri di kota Bekasi, Kami telah melayani pembuatan kitchen set sejak 2017. Kepercayaan bagi kami merupakan buah atas pelayanan pembuatan furniture kami yang selalu memberikan kualitas terbaik dengan harga yang terjangkau.<br><br>
+      Besar kecil ruangan bagi kami tidak masalah, Karena tim kami mendesain furniture dengan sangat fleksibel!</p>
+    </div>
+  </div>
+</div>
+
+<div class="navig1 container w3-content w3-row-padding w3-padding-32 w3-content reveal">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <div class="w3-center w3-padding-16 w3-hide-large w3-hide-medium">
+        <img src="assets/img/pekerja.png" class="w3-image" width="500" height="500">
+      </div>
+    <span class="w3-xlarge w3-margin-bottom"><b>Kualitas bahan dasar dan finishing</b></span><br>
+        <p>Selalu kami perhatikan untuk memastikan supaya bisa memenuhi ekspektasi anda. untuk rumah tinggal yang nyaman, memiliki karakteristik serta nilai seni yang berkualitas kami hadir sebagai solusi memenuhi kebutuhan anda dalam pembuatan setiap furniture. Disini kami memberikan konsultasi gratis bagi anda yang ingin bertanya.<p><b><span class="w3-xlarge navig1"></span></b><p>
+    </div>
+    <div class="w3-col l4 m6">
+<div class="w3-section w3-container w3-image w3-hide-small">
+       <img src="assets/img/bahan.png" class="w3-image" width="500" height="500">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  	 <!-- Grid -->
+  <div class="w3-row w3-content w3-container reveal">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16">Kenapa Harus Pilih Kami</span>
+    </div>
+    <div class="zoom w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>CUSTOM INTERIOR</h3>
+      <p>Berbagai jenis furniture custom. Kami juga menyediakan item lain untuk dukungan seperti kursi, sekat & rak piring untuk kitchen set</p>
+    </div>
+
+    <div class="zoom w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>HARGA TERBAIK</h3>
+      <p>Kami siap memberikan penawaran dengan harga yang terjangkau untuk memenuhi kebutuhan pembuatan setiap furniture impian anda</p>
+    </div>
+
+    <div class="zoom w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>TERPERCAYA</h3>
+      <p>Sudah banyak pelanggan yang kami tangani, di kerjakan oleh tenaga ahli yang sudah berpengalaman dalam pembuatan furniture</p>
+    </div>
+
+    <div class="zoom w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>BERKUALITAS</h3>
+      <p>Menggunakan bahan dasar yang baik, Menjadikan setiap furniture yang diproduksi akan sangat terjamin ketahanan dan kualitasnya</p>
+    </div>
+  </div>
+<!-- The Galeri Section -->
+  <div id="galeri">
+  <div class="gallery-section w3-content">
+      <div class="w3-center w3-padding-64">
+      <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16">Galeri</span>
+    </div>
+        <div class="gallery">
+
+          <a href="assets/img/22.jpg" class="image">
+            <img src="assets/img/22.jpg" alt="">
+          </a>
+
+          <a href="assets/img/10.jpg" class="image">
+            <img src="assets/img/10.jpg" alt="">
+          </a>
+
+          <a href="assets/img/14.jpg" class="image">
+            <img src="assets/img/14.jpg" alt="">
+          </a>
+
+          <a href="assets/img/4s.jpg" class="image">
+            <img src="assets/img/4s.jpg" alt="">
+          </a>
+
+          <a href="assets/img/1.jpg" class="image">
+            <img src="assets/img/1.jpg" alt="">
+          </a>
+
+          <a href="assets/img/5.jpg" class="image">
+            <img src="assets/img/5.jpg" alt="">
+          </a>
+
+          <a href="assets/img/17.jpg" class="image">
+            <img src="assets/img/17.jpg" alt="">
+          </a>
+
+          <a href="assets/img/16.jpg" class="image">
+            <img src="assets/img/16.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-center w3-padding-64 reveal" id="harga">
+      <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16">Perkiraan Harga</span>
+    </div>
+
+<div class="w3-row-padding w3-content w3-animate-bottom reveal">
+
+    <div class="w3-third w3-center w3-margin-bottom">
+        <div class="navig1 w3-wide w3-xlarge w3-padding-32">KITCHEN SET</div>
+        <div class="w3-padding-32 w3-white">
+        <p><b>Kabinet Atas:</b></p>
+        <p><i>Panjang x Harga (1.599.000)</i></p>
+          <p><b>Kabinet Bawah:</b></p>
+          <p><i>Panjang x Harga (1.699.000)</i></p>
+          <p><b>Finishing: HPL</b></p>
+          <p><b>Material:</b></p>
+          <p><i>Block melamin 18mm</i></p>
+          <a class="w3-button w3-red w3-padding-large w3-round-xxlarge zoom" href="https://api.whatsapp.com/send?phone=6283861761951&amp;text=Permisi,%20Saya%20ingin%20pesan%20Kitchen%20Setnya" target="_blank"><b>PESAN SEKARANG</b></a>
+    </div>
+    </div>
+
+    <div class="w3-third w3-center w3-margin-bottom reveal">
+        <div class="navig1 w3-wide w3-xlarge w3-padding-16">ALMARI & WARDROBE</div>
+        <div class="w3-padding-32 w3-white">
+        <p><b>Panjang </p>
+          <p>x Tinggi</b> 
+        	<p><b>x Harga:</b></p>
+        	<p><i>(1.699.000)</i></p>
+          <p><b>Finishing: HPL</b></p>
+          <p><b>Material:</b></p>
+          <p><i>Block melamin 18mm</i></p>
+          <a class="w3-button w3-red w3-padding-large w3-round-xxlarge zoom" href="https://api.whatsapp.com/send?phone=6283861761951&amp;text=Permisi,%20Saya%20ingin%20pesan%20Almari%20/Wardrobe-nya" target="_blank"><b>PESAN SEKARANG</b></a>
+    </div>
+    </div>
+
+    <div class="w3-third w3-center w3-margin-bottom reveal">
+        <div class="navig1 w3-padding-16 w3-wide w3-xlarge w3-padding-32">KITCHEN CATDUCO</div>
+        <div class="w3-padding-32 w3-white">
+        <p><b>Kabinet Atas:</b></p>
+        <p><i>Panjang x Harga (2.499.000)</i></p>
+          <p><b>Kabinet Bawah:</b></p>
+          <p><i>Panjang x Harga (2.499.000)</i></p>
+          <p><b>Finishing: CATDUCO</b></p>
+          <p><b>Material:</b></p>
+          <p><i>Block melamin 18mm</i></p>
+          <a class="w3-button w3-red w3-padding-large w3-round-xxlarge zoom" href="https://api.whatsapp.com/send?phone=6283861761951&amp;text=Permisi,%20Saya%20ingin%20pesan%20Kitchen%20Set%20Duco-nya" target="_blank"><b>PESAN SEKARANG</b></a>
+    </div>
+    </div>
+    </div>
+</section>
+<footer>
+  <div id="kontak">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide">KONTAK</h2>
+    <div class="w3-row w3-padding-32 w3-opacity">
+      <div class="w3-col w3-large w3-margin-bottom">
+      	<b>Phone:</b> <i>+62838-6176-1951</i><br>
+        <b>Email:</b> <i> ksnoto123@gmail.com</i><br>
+        <b>Workshop:</b> <i>Jl. H. Mughni III Rt.003 Rw.001, Jatimekar, Bekasi,
+Jawa Barat 17422.</i>
+</div>
+<div class="w3-center">
+        </svg></span> <span class=" w3-margin-bottom"><a href="http://instagram.com/kitchenset_pranoto"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+</svg></span> <span class=" w3-margin-bottom"><a href="http://t.me/ksnoto123"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> 
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/> 
+                    </a></svg></div>
+      </div>
+    </div>
+  </div>
+
+    <br>
+  <br>
+  <p><h6><b>©2024 Pranoto Kitchen Set</b></h6></p>
+</footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+ <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+    <script>
+    	var sslide = {
+  /* (A) INITIALIZE SLIDESHOW */
+  instances : [],
+  init : function (opt) {
+    // (A1) REGISTER SLIDESHOW INSTANCE
+    let id = sslide.instances.length;
+    sslide.instances.push(opt);
+
+    // (A2) PRELOAD IMAGES
+    let all = opt.images.length,
+        loaded = 0;
+    for (let i of opt.images) {
+      let img = document.createElement("img");
+      img.src = i.src;
+      img.onload = function(){
+        loaded++;
+        if (loaded == all) { sslide.attach(id); }
+      };
+    }
+  },
+
+  /* (B) INITIALIZE - ATTACH CONTROLS */
+  attach : function (id) {
+    // (B1) CONTAINER ITSELF
+    let inst = sslide.instances[id],
+        sSlide = document.getElementById(inst.target);
+    sSlide.classList.add("sSlide");
+
+    // (B2) TOP HALF - IMAGES + CONTROLS
+    let sTop = document.createElement("div"),
+        sImg = document.createElement("div"),
+        sLeft = document.createElement("div"),
+        sRight = document.createElement("div");
+    sTop.classList.add("sTop");
+    sImg.classList.add("sImg");
+    sLeft.classList.add("sLeft");
+    sRight.classList.add("sRight");
+    sLeft.innerHTML = "&lt;";
+    sRight.innerHTML = "&gt;";
+    sLeft.addEventListener("click", function(){
+      sslide.nav(id, 0);
+    });
+    sRight.addEventListener("click", function(){
+      sslide.nav(id, 1);
+    });
+    sSlide.appendChild(sTop);
+    sTop.appendChild(sImg);
+    sTop.appendChild(sLeft);
+    sTop.appendChild(sRight);
+    
+    // (B3) BOTTOM HALF - CAPTION
+    let sBottom = document.createElement("div");
+    sBottom.classList.add("sBottom");
+    sSlide.appendChild(sBottom);
+    
+    // (B4) READY!
+    inst.current = -1;
+    inst.sImg = sImg;
+    inst.sBottom = sBottom;
+    sslide.nav(id, 1);
+    
+    if (inst.auto) {
+      inst.timer = setInterval(function(){
+        sslide.nav(id, 1);
+      }, inst.auto); 
+    }
+  },
+
+  /* (C) NAVIGATION */
+  nav : function (id, direction) {
+    // (C1) CALCULATE NEXT SLIDE
+    let inst = sslide.instances[id],
+        slides = inst.images;
+    if (direction) { inst.current++; }
+    else { inst.current--; }
+    if (inst.current < 0) { inst.current = slides.length - 1; }
+    if (inst.current >= slides.length) { inst.current = 0; }
+
+    // (C2) DRAW SLIDE
+    let img = document.createElement("img");
+    img.src = slides[inst.current].src;
+    inst.sImg.innerHTML = "";
+    inst.sImg.appendChild(img);
+    inst.sBottom.innerHTML = slides[inst.current].cap;
+  }
+};
+    </script>
+    <script type="text/javascript">
+
+    $('#myButton').venomButton({
+        phone: '6285715891150',
+        popupMessage: 'Ada yang bisa kami bantu?',
+        message: "Ketik pesan anda disini...",
+        showPopup: true,
+        position: "left",
+        linkButton: false,
+        showOnIE: false,
+        headerTitle: 'WhatsApp',
+        headerColor: '#25d366',
+        backgroundColor: '#25d366',
+        buttonImage: '<img src="assets/img/whatsapp.svg" />'
+    });
+
+</script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+</body>
+</html>
+
